@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #0b0d0f;
+  --color-background-secondary: #15181c;
+  --color-foreground: #f5f5f5;
+  --color-foreground-secondary: #a7adb4;
+  --color-accent: #39ff88;
+  --color-accent-secondary: #16c66a;
+  --color-white: #ffffff;
+  --color-border: rgba(245, 245, 245, 0.1);
+  --color-border-strong: rgba(245, 245, 245, 0.18);
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-background-secondary: var(--color-background-secondary);
+  --color-foreground: var(--color-foreground);
+  --color-foreground-secondary: var(--color-foreground-secondary);
+  --color-accent: var(--color-accent);
+  --color-accent-secondary: var(--color-accent-secondary);
+  --color-white: var(--color-white);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --animate-blink: blink 1s step-end infinite;
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-background);
+}
+
+/* Focus visibility for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Thin, unobtrusive scrollbar that matches the lab aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-background-secondary);
+  border: 2px solid var(--color-background);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-secondary);
+}
+
+/* Subtle static grid used behind hero / journey sections */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(245, 245, 245, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 245, 245, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.text-glow {
+  text-shadow: 0 0 24px rgba(57, 255, 136, 0.35);
+}
+
+.glow-ring {
+  box-shadow: 0 0 0 1px rgba(57, 255, 136, 0.4), 0 0 24px rgba(57, 255, 136, 0.15);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Respect user's motion preference across the whole site */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
