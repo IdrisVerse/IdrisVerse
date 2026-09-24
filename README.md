@@ -34,6 +34,8 @@ I'm interested in the space where AI engineering meets real-world business proce
 **Languages**
 
 ![Python](https://img.shields.io/badge/Python-15181C?style=flat-square&logo=python&logoColor=39FF88)
+![C++](https://img.shields.io/badge/C++-15181C?style=flat-square&logo=cplusplus&logoColor=39FF88)
+![Java](https://img.shields.io/badge/Java-15181C?style=flat-square&logo=openjdk&logoColor=39FF88)
 
 **AI & Machine Learning**
 
