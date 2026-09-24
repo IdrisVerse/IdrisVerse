@@ -74,8 +74,8 @@ I'm interested in the space where AI engineering meets real-world business proce
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=IdrisVerse&show_icons=true&hide_border=true&bg_color=0B0D0F&title_color=39FF88&text_color=F5F5F5&icon_color=39FF88&ring_color=39FF88" width="48%" alt="Mohamed's GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IdrisVerse&layout=compact&hide_border=true&bg_color=0B0D0F&title_color=39FF88&text_color=F5F5F5" width="48%" alt="Top languages" />
+  <img src="https://github-readme-stats-navy-mu-82.vercel.app/api?username=IdrisVerse&show_icons=true&hide_border=true&bg_color=0B0D0F&title_color=39FF88&text_color=F5F5F5&icon_color=39FF88&ring_color=39FF88" width="48%" alt="Mohamed's GitHub stats" />
+  <img src="https://github-readme-stats-navy-mu-82.vercel.app/api/top-langs/?username=IdrisVerse&layout=compact&hide_border=true&bg_color=0B0D0F&title_color=39FF88&text_color=F5F5F5" width="48%" alt="Top languages" />
 </p>
 
 <p align="center">
